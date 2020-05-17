@@ -1,11 +1,12 @@
 # ansible-ios-prefix-list-route-map
 
-Role and an example of playbook to apply prefix-lists and route-maps on Cisco IOS devices, just populating a txt file with prefix-lists content.<br>
+Prefix-lists and route-maps are the main tools of network operators to control the route advertisements in bgp sessions, as other filters and controls in the routing administration tasks. 
+<br>
+
+There are defined two roles - ios-prefix-list and ios-route-map, and an example of playbook to apply these prefix-lists and route-maps on Cisco IOS devices, just populating a txt file with prefix-lists content.<br>
 The network operators can easily update the prefix-lists file(s) content, without worrying about ansible and yaml syntax.
 <br>
 
-Prefix-lists and route-maps are the main tools of network operators to control the route advertisements in bgp sessions, as other filters and controls in the routing administration tasks. 
-<br>
 
 The role "ios-prefix-list" will read the "prefixlist-name.txt" file content, and create/update a prefix-list in the target device(s) defined in the playbook.
 The role "ios-route-map" will apply the prefix-list in the route-map name defined.
