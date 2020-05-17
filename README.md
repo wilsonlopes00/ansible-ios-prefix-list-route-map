@@ -4,7 +4,7 @@ Prefix-lists and route-maps are the main tools of network operators to control t
 <br>
 
 There are defined two roles - ios-prefix-list and ios-route-map, and an example of playbook to apply these prefix-lists and route-maps on Cisco IOS devices, just populating a txt file with prefix-lists content.<br>
-The network operators can easily update the prefix-lists file(s) content, without worrying about ansible and yaml syntax.
+The network operators can easily update the prefix-lists and route-maps, without worrying about ansible and yaml syntax.
 <br>
 
 
