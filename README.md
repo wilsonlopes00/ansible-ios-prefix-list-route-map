@@ -1,6 +1,6 @@
 # ansible-ios-prefix-list-route-map
 
-Prefix-lists and route-maps are the main tools of network operators to control the route advertisements in bgp sessions, as other filters and controls in the routing administration tasks. 
+Prefix-lists and route-maps are the main tools of network operators to control the route advertisements in bgp sessions, as on other filters and controls in the routing administration tasks. 
 <br>
 
 There are defined two roles - ios-prefix-list and ios-route-map, and an example of playbook to apply these prefix-lists and route-maps on Cisco IOS devices, just populating a txt file with prefix-lists content.<br>
