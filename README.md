@@ -63,8 +63,8 @@ You must define the variables "prefixlist_name" and "routemap_name" in the playb
 
 Example:
 
-**prefixlist_name:** prefix-list-test
-**routemap_name:** route-map-test
+**prefixlist_name:** prefix-list-test<br>
+**routemap_name:** route-map-test<br>
 
 This is to create/update a prefix-list named "prefix-list-test" with "prefix-list-test.txt" file content, and apply this prefix-list to the route-map "route-map-test".
 
