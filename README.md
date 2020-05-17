@@ -58,8 +58,8 @@ ok: [x.x.x.x] => {
 
 You must define the variables "prefixlist_name" and "routemap_name" in the playbook.
 
-**prefixlist_name:** "name-of-prefix-list-in-the-device-config"
-**routemap_name:** "name-of-route-map-in-the-device-config"
+**prefixlist_name:** "name-of-prefix-list-in-the-device-config"<br>
+**routemap_name:** "name-of-route-map-in-the-device-config"<br>
 
 Example:
 
