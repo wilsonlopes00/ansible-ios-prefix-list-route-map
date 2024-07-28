@@ -1,3 +1,6 @@
-[peering-routers]
+[routers]
 x.x.x.x
-y.y.y.y
+
+[routers:vars]
+ansible_network_os=cisco.ios.ios
+
