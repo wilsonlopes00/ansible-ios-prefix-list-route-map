@@ -1,18 +1,33 @@
 ---
-- hosts: peering-routers
+- hosts: routers
   gather_facts: false
-  connection: local
+  connection: network_cli
 
   tasks:
-  - name: update prefix-list "{{ prefixlist_name }}"
+  - name: update prefix-list {{ prefixlist_name }}
     vars:
-      prefixlist_name: prefix-list-test
+      prefixlist_name: prefix-list-test-in
     import_role:
       name: ios-prefix-list
 
-  - name: apply prefix-list "{{ prefixlist_name }}" on route-map "{{ routemap_name }}"
+  - name: apply prefix-list {{ prefixlist_name }} on route-map {{ routemap_name }}
     vars:
-      prefixlist_name: prefix-list-test
-      routemap_name: route-map-test
+      prefixlist_name: prefix-list-test-in
+      routemap_name: route-map-test-in
     import_role:
       name: ios-route-map
+
+  - name: update prefix-list {{ prefixlist_name }}
+    vars:
+      prefixlist_name: prefix-list-test-out 
+    import_role:
+      name: ios-prefix-list
+
+  - name: apply prefix-list {{ prefixlist_name }} on route-map {{ routemap_name }}
+    vars:
+      prefixlist_name: prefix-list-test-out 
+      routemap_name: route-map-test-out 
+    import_role:
+      name: ios-route-map
+
+
